@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  svg {
+    width: 45rem;
+    height: 39rem;
+  }
+  @media (max-width: 480px) {
+    svg {
+      display: none;
+    }
+  }
+}
+.text {
+  max-width: 486px;
+  h4 {
+    color: var(--yellow);
+    font: 500 1.25rem "Nunito", sans-serif;
+    text-transform: uppercase;
+    line-height: 27px;
+    margin-bottom: 0.75rem;
+  }
+  h1 {
+    color: var(--text-title);
+    font: 600 4rem "Playfair Display", sans-serif;
+    line-height: 120%;
+    margin-bottom: 2rem;
+  }
+  p {
+    color: var(--text-body);
+    font: 400 1.5rem "Nunito", sans-serif;
+    margin-bottom: 2rem;
+  }
+}
+// .buttonsContainer {
+//   display: flex;
+//   align-items: center;
+//   justify-items: center;
+// }
