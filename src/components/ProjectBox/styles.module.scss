@@ -1,0 +1,35 @@
+.container {
+  align-items: center;
+  background-color: var(--shape);
+  border-radius: 24px;
+  display: flex;
+  margin-bottom: 5rem;
+  justify-content: space-evenly;
+  img {
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+  }
+}
+.projectDetails {
+  h1 {
+    color: var(--text-title);
+    line-height: 150%;
+    font: 700 2.5rem "Playfair Display", sans-serif;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    width: 406.68px;
+    color: var(--text-body);
+    font: 400 1.125rem "Nunito", sans-serif;
+    line-height: 150%;
+  }
+  button {
+    border: 1px solid var(--text-title);
+    box-sizing: border-box;
+    border-radius: 24px;
+    padding: 8px 24px;
+    background-color: transparent;
+    color: var(--text-title);
+    font: 500 1.125rem "Nunito", sans-serif;
+  }
+}
