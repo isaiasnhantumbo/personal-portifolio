@@ -1,34 +1,110 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+<br/>
+<h1 align="center">
+  Personal Portfolio
+</h1>
+<h2 align="center"> 
+<img src="https://img.shields.io/badge/Status-Termidado-green">
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/isaiasnhantumbo/personal-portifolio">
+<img alt="tHub language count" src="https://img.shields.io/github/languages/top/isaiasnhantumbo/personal-portifolio">
+<img alt="GitHub language count" src="https://img.shields.io/github/repo-size/isaiasnhantumbo/personal-portifolio">
+<img alt="GitHub language count" src="https://img.shields.io/github/license/isaiasnhantumbo/personal-portifolio">
+</h2>
+<br>
+<p align="center">
+<a href="#-tecnologias-usadas">Tecnologias usadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#-pré-requisitos">Pré-requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#-como-rodar-o-projecto">Como rodar o projecto</a>
+</p>
+<p align="center">
+    <img src="./public/thumbnail.png">
+</p>
+
+<p align="center">
+O <span>Personal Portfolio</span> é uma pagina de portfolio em que o visitante pode visual projectos e informações.
+
+
+
+<!-- <h1 align="center"> 
+
+<a href="https://expersonal-portifolio.vercel.app">Acessar demonstração</a>
+</h1> -->
+
+
+## 🛠 Tecnologias usadas
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+
+- Nextjs
+- ReactJs
+- Typescript
+- Sass
+- Framer Motion
+
+
+
+
+---
+
+
+## ⚠ Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+---
+## 🎲 Como rodar o projecto
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Clone este repositório
+$ git clone <https://github.com/isaiasnhantumbo/personal-portifolio.git>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd personal-portifolio
+
+# Abra a pasta no Visual Studio Code
+$ code .
+
+# Instale as dependência
+$ yarn
+
+# Execute a aplicação com o yarn
+$ yarn dev
+
+# O servidor inciará na porta:3000 - acesse <http://localhost:3000>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 📘 Licença
+Este projecto usa a  [MIT License](LICENSE).
+****
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 👩‍🎨 Layout
+[Andressa Belém](https://www.figma.com/@anddesignland)
 
-## Learn More
+<h1 align="center">
+👨🏽‍🏫 
+<br>
+Desenvolvido por
+<br>
+ Isaias Nhantumbo Junior
+</h1>
+</p>
+<h1 align="center"> 🤝 &nbsp;Vamos nos conectar ?👨 </h1>
 
-To learn more about Next.js, take a look at the following resources:
+<h1 align="center">
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[![linkedin](https://img.shields.io/badge/LinkedIn-green?style=for-the-badge&logo=linkedin&color=050F2C&logoColor=4C8EDA)](https://www.linkedin.com/in/isaias-nhantumbo-junior-733bb619b)
+[![instagram](https://img.shields.io/badge/Instagram-blue?style=for-the-badge&logo=instagram&color=050F2C&logoColor=4C8EDA)](https://www.instagram.com/isaias_nhantumbo/)
+[![youtube](https://img.shields.io/badge/Youtube-blue?style=for-the-badge&logo=youtube&color=050F2C&logoColor=4C8EDA)](https://www.youtube.com/channel/UCOyeYkH0MwJ6RrXTcEFFdAQ?view_as=subscriber)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+</h1>
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
