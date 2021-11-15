@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
 
 import styles from './styles.module.scss';
@@ -9,8 +10,11 @@ interface ButtonProps {
 
 export function Button({ isOutlined, children }: ButtonProps) {
   return (
-    <button className={`${styles.btn} ${isOutlined ? styles.outlined : ''}`}>
+    <motion.button
+      whileHover={{ scale: 1.1 }}
+      className={`${styles.btn} ${isOutlined ? styles.outlined : ''}`}
+    >
       {children}
-    </button>
+    </motion.button>
   );
 }
