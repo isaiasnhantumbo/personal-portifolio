@@ -1,18 +1,21 @@
 .container {
-  min-height: 100vh;
+  // min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  // align-items: center;
+  // height: 100vh;
+
   header {
     align-items: center;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     height: 56px;
     a {
-      margin-right: auto;
+      color: var(--text-title);
+      font: 700 1.125rem "Nunito", sans-serif;
       transition: all 400ms;
       &:hover {
         text-decoration: underline;
@@ -37,18 +40,38 @@
   align-items: center;
 }
 
+.projects {
+  h2 {
+    color: var(--text-title);
+    text-align: center;
+    font: 700 3rem "Playfair Display", sans-serif;
+    border-radius: 2px;
+    line-height: 4.5rem;
+  }
+}
+.borderBottom {
+  border-bottom: 4px solid var(--yellow);
+  width: 120px;
+  margin: 0 auto;
+}
+
 .footer {
   width: 100%;
-  height: 100px;
+  // height: 100px;
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  flex-direction: column;
+  padding: 1rem 0;
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  div {
+    padding-bottom: 0.5rem;
+  }
+
+  span {
+    color: var(--text-body);
+    margin-bottom: 2rem;
+    font: 400 1rem "Nunito", sans-serif;
+  }
 }
