@@ -4,6 +4,8 @@ import Link from 'next/link';
 import React from 'react';
 
 import { Hero } from '../components/Hero';
+import { ProjectBox } from '../components/ProjectBox';
+import { ProjectBoxLeft } from '../components/ProjectBoxLeft';
 
 import styles from '../styles/Home.module.scss';
 
@@ -40,8 +42,38 @@ export default function Home() {
       <main className={styles.main}>
         <Hero />
       </main>
-
+      <section id="projects" className={styles.projects}>
+        <h2>
+          Projects <div className={styles.borderBottom} />
+        </h2>
+        <ProjectBox imageSrc="/project-image.png" />
+        <ProjectBoxLeft imageSrc="/project-image.png" />
+        <ProjectBox imageSrc="/project-image2.png" />
+      </section>
       <footer className={styles.footer}>
+        <div>
+          <Image
+            className={styles.image}
+            src="/icons/instagram.svg"
+            alt="Instagram Logo"
+            width="48"
+            height="48"
+          />
+          <Image
+            className={styles.image}
+            src="/icons/linkedin.svg"
+            alt="Linkedin Logo"
+            width="48"
+            height="48"
+          />
+          <Image
+            className={styles.image}
+            src="/icons/mail.svg"
+            alt="Email Logo"
+            width="48"
+            height="48"
+          />
+        </div>
         <span>Madelyn Torff 2021 </span>
       </footer>
     </div>
