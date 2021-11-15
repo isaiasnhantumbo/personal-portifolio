@@ -1,10 +1,16 @@
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import React, { ReactNode } from 'react';
 import styles from './styles.module.scss';
 
 export function Navigation() {
   return (
-    <header className={styles.container}>
+    <motion.header
+      className={styles.container}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ type: 'spring', stiffness: 70 }}
+    >
       <Link href="/">
         <a>Madelyn Torff</a>
       </Link>
@@ -27,6 +33,6 @@ export function Navigation() {
           </li>
         </ul>
       </nav>
-    </header>
+    </motion.header>
   );
 }
