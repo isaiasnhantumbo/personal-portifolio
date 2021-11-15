@@ -1,0 +1,22 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 56px;
+  a {
+    color: var(--text-title);
+    font: 700 1.125rem "Nunito", sans-serif;
+    transition: all 400ms;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    li + li {
+      margin-left: 3rem;
+    }
+  }
+}
