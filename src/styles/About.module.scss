@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.125rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+  svg {
+    width: 26.5rem;
+    height: 26.5rem;
+  }
+
+  div {
+    margin: 0 auto;
+    width: 40%;
+    h1 {
+      font: 700 3rem "Playfair Display", sans-serif;
+      color: var(--text-title);
+    }
+    h4 {
+      font: 400 1.5rem "Nunito", sans-serif;
+      color: var(--text-body);
+    }
+  }
+}
