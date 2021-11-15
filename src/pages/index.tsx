@@ -8,6 +8,7 @@ import { ProjectBoxLeft } from '../components/ProjectBoxLeft';
 
 import styles from '../styles/Home.module.scss';
 import { Footer } from '../components/Footer';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
@@ -22,9 +23,9 @@ export default function Home() {
         <Hero />
       </main>
       <section id="projects" className={styles.projects}>
-        <h2>
+        <motion.h2 initial={{ scale: 0 }} whileInView={{ scale: 1 }}>
           Projects <div className={styles.borderBottom} />
-        </h2>
+        </motion.h2>
         <ProjectBox imageSrc="/project-image.png" />
         <ProjectBoxLeft imageSrc="/project-image.png" />
         <ProjectBox imageSrc="/project-image2.png" />
