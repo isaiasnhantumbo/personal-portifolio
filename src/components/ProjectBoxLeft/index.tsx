@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import styles from './styles.module.scss';
+import { motion } from 'framer-motion';
 
 interface ProjectBoxProps {
   imageSrc: string;
@@ -9,7 +10,12 @@ interface ProjectBoxProps {
 
 export function ProjectBoxLeft({ imageSrc }: ProjectBoxProps) {
   return (
-    <div className={styles.container}>
+    <motion.div
+      className={styles.container}
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{ type: 'spring', stiffness: 50 }}
+    >
       <Image src={imageSrc} alt="Project image" width="496" height="524" />
       <div className={styles.projectDetails}>
         <h1>Project Name</h1>
@@ -17,8 +23,8 @@ export function ProjectBoxLeft({ imageSrc }: ProjectBoxProps) {
           I created this personal project in order to show how to create an
           interface in Figma using a portfolio as an example.
         </p>
-        <button>View Project</button>
+        <motion.button whileHover={{ scale: 1.1 }}>View Project</motion.button>
       </div>
-    </div>
+    </motion.div>
   );
 }
