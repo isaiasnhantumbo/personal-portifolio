@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 import styles from './styles.module.scss';
 
@@ -7,21 +7,24 @@ export function Footer() {
   return (
     <footer className={styles.footer} id="contacts">
       <div>
-        <Image
+        <motion.img
+          whileHover={{ scale: 1.1 }}
           className={styles.image}
           src="/icons/instagram.svg"
           alt="Instagram Logo"
           width="48"
           height="48"
         />
-        <Image
+        <motion.img
+          whileHover={{ scale: 1.1 }}
           className={styles.image}
           src="/icons/linkedin.svg"
           alt="Linkedin Logo"
           width="48"
           height="48"
         />
-        <Image
+        <motion.img
+          whileHover={{ scale: 1.1 }}
           className={styles.image}
           src="/icons/mail.svg"
           alt="Email Logo"
