@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { Button } from '../components/Button';
 import { Footer } from '../components/Footer';
 import { Navigation } from '../components/Navigation';
@@ -9,7 +10,11 @@ export default function About() {
     <div className={styles.container}>
       <Navigation />
       <div className={styles.hero}>
-        <div>
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ type: 'spring', stiffness: 50 }}
+        >
           <h1>About me</h1>
           <h4>
             Nisl arcu, scelerisque neque ut. Tincidunt amet, tempor duis tortor
@@ -17,15 +22,18 @@ export default function About() {
             cras sed. Aliquet risus posuere aliquet imperdiet sit.
           </h4>
           <Button>Resume</Button>
-        </div>
-        <svg
+        </motion.div>
+        <motion.svg
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ type: 'spring', stiffness: 70, delay: 0.6 }}
           viewBox="0 0 524 524"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <circle cx="262" cy="262" r="262" fill="#FDC435" />
           <image xlinkHref="/profile-image.png" />
-        </svg>
+        </motion.svg>
       </div>
       <Footer />
     </div>
