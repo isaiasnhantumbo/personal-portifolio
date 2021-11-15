@@ -4,13 +4,14 @@
   border-radius: 24px;
   display: flex;
   margin-bottom: 5rem;
-  justify-content: space-evenly;
+  justify-content: center;
   img {
     border-top-left-radius: 22px;
     border-bottom-left-radius: 22px;
   }
 }
 .projectDetails {
+  margin-left: 2rem;
   h1 {
     color: var(--text-title);
     line-height: 150%;

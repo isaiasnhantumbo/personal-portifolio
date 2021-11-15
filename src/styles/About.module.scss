@@ -8,14 +8,13 @@
   display: flex;
   align-items: center;
   justify-items: center;
-
+  justify-content: center;
   svg {
     width: 26.5rem;
     height: 26.5rem;
   }
 
   div {
-    margin: 0 auto;
     width: 40%;
     h1 {
       font: 700 3rem "Playfair Display", sans-serif;
