@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { Button } from '../Button';
 
 import styles from './styles.module.scss';
@@ -5,7 +6,12 @@ import styles from './styles.module.scss';
 export function Hero() {
   return (
     <main className={styles.container}>
-      <div className={styles.text}>
+      <motion.div
+        className={styles.text}
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ type: 'spring', stiffness: 100 }}
+      >
         <h4>UI/UX Designer</h4>
         <h1>Hello, my name is Madelyn Torff</h1>
         <p>
@@ -16,8 +22,15 @@ export function Hero() {
           <Button>Projects</Button>
           <Button isOutlined>LinkedIn</Button>
         </div>
-      </div>
-      <svg viewBox="0 0 720 629" fill="none" xmlns="http://www.w3.org/2000/svg">
+      </motion.div>
+      <motion.svg
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ type: 'spring', stiffness: 100, delay: 1 }}
+        viewBox="0 0 720 629"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
           fillRule="evenodd"
           clipRule="evenodd"
@@ -25,7 +38,7 @@ export function Hero() {
           fill="#FDC435"
         />
         <image xlinkHref="/personal-image.png" />
-      </svg>
+      </motion.svg>
     </main>
   );
 }
